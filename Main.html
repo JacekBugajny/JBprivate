@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zadanie Front End</title>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="MyStyle.css">
+		<! For slider>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+		<! For floating Menu>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+		<script type="text/javascript">
+			
+			$(function() {
+    				// Stick the #nav to the top of the window
+   				 		var nav = $('#nav');  //pointer do Menu
+   				 		if (nav.length) {
+   				 		var navHomeY = nav.offset().top+800;	//to get the menu's position relative to the overall window, object with .top and .left czyli kiedy przeskrolujemy flage
+   				 		var isFixed = false;	//FLAGA aby wiedziec czy menu plynie czy nie
+  				  		var $w = $(window);		//jQuerry referencja do windows
+   				 $w.scroll(function() {									//odpalane zawsze jak stronka jest przewijana
+      			  		var scrollTop = $w.scrollTop();					//pobranie obecnej pozycji przewijania wzgledem okna
+     			   		var shouldBeFixed = scrollTop > navHomeY;		//sprawdzenie pobranej pozycji z pozycja Menu
+      			  if (shouldBeFixed && !isFixed) {			//dzala kiedy menu powinno byc przyklejone a nie jest
+          		  		nav.css({
+           	     			position: 'fixed',				
+           	     			top: 0,
+               				 left: nav.offset().left,
+               				 width: nav.width()
+           						 });
+           				 isFixed = true;
+       				}
+        		else if (!shouldBeFixed && isFixed)			//dziala kiedy menu nie powinno byc przyklejone
+       			 {
+           		nav.css({
+                		position: 'static'
+          				  });
+           		 isFixed = false;
+        		}
+   			 });
+			}});
+		</script>
+	</head>
+
+	<body>
+		<div id="banner">
+		<div class="cycle-slideshow header" id="logo"
+		data-cycle-fx="scrollHorz"
+		data-cylce-pager="#no-template-pager"
+		data-cycle-pager-template="<a  href='#'><img src='in1.gif' style='z-index=1;'></a>"
+    	data-cycle-slides=">div"
+		style="z-index: -1;"
+		>
+				<div class="firsta cycle-slide cycle-sentinel">
+					<h1 class="header"> Feel the power of typography</h1>
+				</div>
+				<div class="firstb cycle-slide">
+					<h1 class="header"> Feel the power of typography</h1>
+				</div>
+				<div class="firstc cycle-slide">
+					<h1 class="header"> Feel the power of typography</h1>
+				</div>
+		</div>
+	<div id="no-template-pager" class="external">
+	</div>
+				<div class="second" id="navWrap">
+						<div id="nav">
+							<img src="logo.gif">
+							<a href="#banner"><div class="sechome"><p class="home">HOME</p></div></a>
+							<a href="#link2"><div class="secr1"><p class="home1">MENU 2</p></div></a>
+							<a href="#link3"><div class="secr2"><p class="home1">MENU 3</p></div></a>
+							<div class="secr3" style="position:absolute;left:70%;"><p class="home1">MENU 4</p></div>
+							<div class="secr4" style="position:absolute;left:80%;"><p class="home1">MENU 5</p></div>
+
+						</div>
+				</div>
+		</div>
+		<div class="third" id="link2">
+			<div class="text"> <iframe name="iframe_a" width="100%" height="100%" frameborder="0" float="left"></iframe> </div>
+			<a href="firstbox.html" target="iframe_a"><div class="box" style="position:absolute;top:10%;left:14%;background-color:#80c0ce;" ><img src="aa.jpg" id="aaa" class="hidden" 
+			style="position:absolute;bottom:0%;right:0%;" value="hide"><p class="text">First box.</p> </div></a>
+			
+			<a href="secbox.html" target="iframe_a"><div class="box" style="position:absolute;top:10%;left:66%;background-color:#c43434;" ><img src="bb.jpg" id="bbb" class="hidden" 
+			style="position:absolute;bottom:0%;left:0%;"  value="hide"><p class="text">Sec box.</p> </div></a>
+			
+			<a href="thirdbox.html" target="iframe_a"><div class="box" style="position:absolute;top:75%;left:14%%;background-color:#dfbb42;"><img src="cc.jpg" id="ccc" class="hidden" 
+			style="position:absolute;top:0%;right:0%;"  value="hide"><p class="text">Third box.</p> </div></a>
+			
+			<a href="forthbox.html" target="iframe_a"><div class="box" style="position:absolute;top:75%;left:66%;background-color:#508b61;" ><img src="dd.jpg" id="ddd" class="hidden" 
+			style="position:relative;top:0%;left:0%;"  value="hide"><p class="text">Forth box.</p> </div></a>
+		</div>
+<script type="text/javascript">
+	
+	$('.box').on('click', function() {
+		if(!$(this).find('img').hasClass('unhidden')) {
+			console.log('ghhgh');
+			$('.box img.unhidden').removeClass('unhidden');
+			$(this).find('img').addClass('unhidden');
+		};
+	});
+</script>
+
+		<div class="la" id="link3">
+			<div class="sula"></div>
+			<div class="sulb"></div>
+			<div class="sulc"></div>
+			<div class="suld"></div>
+			<div class="gray" style="position:absolute;top:60%;left:10%;"><img src="ajfel.jpg" class="gr"></div>
+			<div class="gray" style="position:absolute;top:60%;left:35%;"><img src="wolna.jpg" class="gr"></div>
+			<div class="listatyt">
+				<img src="ks.jpg" style="float:left;">
+				<h1>Title</h1>
+			</div>
+			<div class="lista">
+					<ol>
+					<li><span> 1. </span><p> Lipfum ipsum elfam pim, mardi grass, wyl wea il, hopsa popsa, dyrdymaly, dwa i cztery maks</p></li>
+					<li><span> 2. </span><p> Lipfum ipsum elfam pim, mardi grass, wyl wea il, hopsa popsa, dyrdymaly, dwa i cztery maksv</p></li>
+					<li><span> 3. </span><p> Lipfum ipsum elfam pim, mardi grass, wyl wea il, hopsa popsa, dyrdymaly, dwa i cztery maks</p></li>
+					<li><span> 4. </span><p> Lipfum ipsum elfam pim, mardi grass, wyl wea il, hopsa popsa, dyrdymaly, dwa i cztery maks</p></li>
+					<li><span> 5. </span><p> Lipfum ipsum elfam pim, mardi grass, wyl wea il, hopsa popsa, dyrdymaly, dwa i cztery maks</p></li>
+					</ol>
+			</div>
+		</div>
+		
+	</body>
+</html>

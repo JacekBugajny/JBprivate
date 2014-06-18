@@ -1,0 +1,253 @@
+
+
+div.firsta	{	
+				background-image:url("header.gif");
+				background-size: cover;
+				position: relative;
+				width: 100%;
+				height: 750px;
+    			background-repeat: no-repeat;	
+    			border: 0px;
+    			
+			}
+div.firstb	{	
+				background-image:url("headera.jpg");
+				background-size: cover;
+				position: relative;
+				width: 100%;
+				height: 750px;
+    			background-repeat: no-repeat;	
+    			border: 0px;
+    				
+			}
+div.firstc	{	
+				background-image:url("headerb.gif");
+				background-size: cover;
+				position: relative;
+				width: 100%;
+				height: 750px;
+    			background-repeat: no-repeat;	
+    			border: 0px;
+    			
+			}
+h1.header	{
+				text-align:center;
+				position: relative;
+				top:20%;
+				font-family: Arial, Helvetica, sans-serif;
+				color: black;
+				font-size: 400%;
+				font-weight: bold;
+				z-index: 1;
+			}
+b.bdiv		{
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+				color: white;
+			}
+div.sub		{	
+				position: relative;
+				top:600px;
+				left:14%;
+				float: left;
+				width: 80%;
+				height: 400;
+   				padding: 0px;
+   				border: 10px;
+    			margin: 0px;
+    			z-index: 2;
+    			
+			}
+div.in1		{	
+				
+				position: absolute;
+				top: 0%;
+				left:10%;
+				
+				width: 6.15%;
+				height: 43%;
+				padding: 0;
+				border: 0px;
+				margin: 0px;
+				
+			}
+div.in2		{
+				
+				position: absolute;
+				top: 0%;
+				left: 40%;
+				
+				width: 6.15%;
+				height: 43%;
+				padding: 0;
+				border: 0px;
+				margin-right: 0%;
+				
+			}
+div.in3		{	
+				
+				position: absolute;
+				top: 0%;
+				left: 70%;
+				
+				width: 6.15%;
+				height: 43%;
+				padding: 0;
+				border: 0px;
+				margin: 0px;
+			
+			}
+div.inp		{	
+				display: inline-block;
+				background-color:#c43434;
+				
+				position: absolute;
+				top: 35%;
+				left: 16.150%;
+				width: 15%;
+				
+				padding: 0px;
+				border: 0px;
+				margin-left: 0%;
+			
+			}
+div.ind		{
+				float: left;
+
+				background-color:#3f727d;
+				position: absolute;
+				top:25%;
+				left:46.150%;
+				width: 15%;
+				
+				padding: 0px;
+				border: 0px;
+				margin-left: 0%;
+				
+			}
+div.int		{	
+				display: inline-block;
+				background-color:#436d4d;
+				position: absolute;
+				top:35%;
+				left:76.15%;
+				
+				width: 15%;
+				
+				padding: 0px;
+				border: 0px;
+				margin-left: 0%;
+				
+			}
+div.second	{
+				display: block;
+				background-color: white;
+				float: left;
+				position: relative;
+				top: -60px;
+				width: 100%;
+				height: 80px;
+				padding: 0px;
+				border: 0px;
+				margin: 0px;
+
+			}
+p.home		{
+				font-family: Lato, sans-serif;
+				font-weight: bold;
+				position: relative;
+				top: 10%;
+				left: 8%;
+				font-size: 140%;
+				color: white;
+				float: left;
+			}
+div.sechome	{
+				display: block;
+				background-color: #ead280;
+				position: relative;
+				top: -10%;
+				left: 50%;
+				width: 5.7%;
+				height: 115%;
+				opacity: 0.9;
+				float: left;
+				z-index: 1;
+
+			}
+div.secr	{
+				display: block;
+				position: relative;
+				left:50%;
+				width: 6.5%;
+				height: 100%;
+				opacity: 0.9;
+				float: left;
+				z-index: 1;
+				opacity: 0.9;
+
+			}
+div.third	{
+				display: block;
+				background-color: #f1f1f1;
+				position: relative;
+				top: -60px;
+				width: 100%;
+				height: 600px;
+				float: left;
+				padding: 0px;
+				border: 3px;
+				margin: 0px;
+			}
+div.text 	{
+				display: block;
+				background-color: white;
+				position: relative;
+				top: 20%;
+				left: 30%;
+				width: 40%;
+				height: 60%;
+				float: left;
+				padding: 0px;
+				border: 3px;
+				border-style: ridge;
+				margin: 0px;
+			}
+div.box		{
+				display: block;
+				background-color: white;
+				/*position: relative;
+				top: 20%;
+				left: 25%;*/
+				width: 20%;
+				height: 15%;
+				float: left;
+				padding: 0px;
+				border: 3px;
+				border-style: ridge;
+				margin: 0px;
+			}
+div.la		{	
+				display: block;
+				position: relative;
+				top: 600px;
+				height: 650px;
+				background-image: url("bgbottom.gif");
+				background-size: 100%;
+    			background-repeat: no-repeat;
+			}
+div.sula	{
+				display: block;
+				background-color: white;
+				position: relative;
+				top: 0%;
+				left:10%;
+				float: left;
+				width: 10%;
+				height: 25%;
+   				padding: 0px;
+   				border: 3px;
+   				border-style: ridge;
+    			margin: 0px;
+			}
+
